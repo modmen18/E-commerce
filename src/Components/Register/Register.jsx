@@ -43,8 +43,7 @@ export default function Register() {
     password: Yup.string()
   .matches(/^[A-Za-z0-9]{6,10}$/, "Password must be between 6 and 10 characters")
   .required("Password is required"),
-    rePassword: Yup.string()
-      .required("Password is required"),
+   
     rePassword: Yup.string()
       .oneOf([Yup.ref("password")], "Passwords do not match")
       .required("Re-password is required"),

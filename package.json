@@ -1,9 +1,12 @@
 {
+  "homepage": "https://modmen18.github.io/E-commerce/",
   "name": "finalproject",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+   "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
@@ -15,6 +18,7 @@
     "formik": "^2.4.6",
     "framer-motion": "^12.23.0",
     "generate-react-cli": "^8.4.8",
+    "gh-pages": "^6.3.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-hot-toast": "^2.4.1",
